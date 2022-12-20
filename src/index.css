@@ -1,13 +1,441 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #192026;
+  --secondary-color: #374151;
+}
+
+body {
+  background-color: #192026;
+}
+
+.Navbar{
+  background-color: #192026;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.Anonime{
+  height: 32px;
+width: 201px;
+font-family: Poppins;
+font-size: 36px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.07em;
+text-align: center;
+color:#FFFFFF;
+position: relative;
+right: 60px;
+}
+
+.lis {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.07em;
+  color: #f5efef;
+}
+.exploreDiv{
+  margin-bottom: 10px;
+}
+
+.Explore{
+color: #FFFFFF;
+}
+
+.p1{
+  color: #868686;
+}
+
+ul {
+  display: flex;
+  list-style:  none;
+  gap: 10px
+  ;
+}
+
+.bannerImg{
+height: 300px;
+width: 100%;
+border-radius: 12px;
+}
+
+.carousel{
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  /* position: absolute;
+  height: 400px;
+  left: 135px;
+  top: 205px; */
+}
+.banner{
+}
+.imgText{
+  width: 50%;
+  color: white;
+  position: relative;
+  bottom: 160px;
+  left: 40px;
+}
+
+.p3{
+  color: #fbffff;
+  font-family: 'Poppins';
+}
+
+.cardContainer{
+  width: 80%;
+  margin: auto;
+  position: relative;
+  bottom: 120px;
+}
+
+.newRelease{
+  color: #fbffff;
+  font-family: 'Poppins';
+  position: relative;
+}
+.cardDiv{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+.cardImg:hover {
+  cursor: pointer;
+}
+
+.cardImg{
+  height: 253px;
+  width: 170px;
+  border-radius: 12px;
+  margin-left: 10px;  
+}
+
+.cardImgTitile{
+  width: 78%;
+  margin: auto;
+  height: 35px;
+  right: 13px;
+  border-radius: 2px;
+  position: relative;
+  font-weight: 600;
+  bottom: 43px;
+  text-align: center;
+  color: #fbffff;
+  border-radius: 0px 0px 10px 10px;
+    /* border: 1px solid red; */
+    background-color: #ada9a967;
+
+}
+.search{
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #374151;
+  box-shadow: inset 0 5px 10px var(--secondary-color);
+  text-align: center;
+}
+
+.mainDiv{
+  color: white;
+}
+
+.detailsDiv{
+  color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+}
+
+.leftSideDiv{
+  width: 710px;  
+}
+.videoTitle{
+  font-family: Poppins;
+  font-weight: 600;
+font-size: 25px;
+line-height: 32px;
+letter-spacing: 0.07em;
+}
+
+.player{
+  width: 700px;
+  height: 402px;
+  /* background: #0F0F0F; */
+  border-radius: 12px;
+}
+
+.miniPlayer{
+  position: relative;
+  left: 270px;
+  bottom: 255px;
+  width: 150px;
+  height: 100px;
+}
+
+.card3{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  height: 300px;
+}
+
+.divImg3{
+width: 200px;
+height: 300px;
+border-radius: 12px;
+}
+
+.img3{
+  height: 100%;
+  width: 200px;
+  border-radius: 12px;
+}
+.gener{
+  font-family: Poppins;
+  font-weight: 600;
+}
+.gener1{
+  font-family: Poppins;
+  color: #969494;
+}
+
+.descDiv{
+  margin-top: 20px;
+}
+
+.rightSideDiv{
+  width: 100%;
+  height: 1050px;
+  margin-left: 30px;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+
+.Card2{
+  width: 50%;
+  
+}
+.popularCards{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  width: 350px;
+
+}
+
+.cardImg2{
+  width: 150px;
+height: 225px;
+border-radius: 12px;
+margin: 10px;
+}
+
+.loginDiv {
+  width: 40%;
+  height: 260px;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px ;
+  color: black;
+  background-color: aliceblue;
+  border: 2px solid #949494;
+  border-radius: 30px;
+}
+
+.loginImg {
+  width: 80%;
+}
+.loginImg:hover {
+  cursor: pointer;
+}
+
+.googleH1 {
+  width: 80%;
+  margin: auto;
+  /* border: 2px solid red ; */
+  margin-top: 40px;
+}
+
+.detailPage{
+  display: none;
+}
+.ptrs {
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: inset 0 5px 10px var(--secondary-color);
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.ptrs:hover{
+  cursor: pointer;
+}
+.searchResultDiv{
+  width: 15%;
+  height: 250px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  left: 1055px;
+  margin-top: 3px;
+  border-radius: 5px;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+}
+.searchResultItem{
+  padding: 5px 0px;
+  cursor: pointer;
+  color: rgb(245, 242, 242);
+  font-weight: bold;
+}
+
+@media (max-width: 701px) {
+  .Navbar{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+  }
+  .Anonime{
+    /* font-size: 2px; */
+    position: relative;
+    font-size: 13px;
+    left: 120px;
+    bottom: 4px;
+  }
+  .lis{
+    position: relative;
+    font-size: 13px;
+    left: 140px;
+    bottom: 4px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .searchBar{
+    position: relative;
+    font-size: 13px;
+    left: 75px;
+    top: 31px;
+  }
+  .search{
+    position: relative;
+    font-size: 13px;
+    right: 185px;
+    top: 30px;
+    width: 120px;
+    height: 27px;
+  }
+  .carousel{
+    width: 100%;
+  }
+  .exploreDiv{
+    font-size: small;
+    width: 60%;
+  }
+  .banner{
+    height: 300px;
+    width: 100%;
+    
+  }
+  .bannerImg{
+    height: 300px;
+    width: 100%;
+  }
+  .imgText{
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    left: 5px;
+  }
+  .p2{
+    font-size:  15px;
+  }
+  .p3{
+    font-size:  12px;
+  }
+  .cardContainer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    right: 0px; 
+    
+  }
+  .newRelease{
+    font-size: 25px;
+  }
+  .cardDiv{
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    width: 100%;
+  }
+  .card{
+    width: 100%;
+  }
+  .cardImg{
+    height: 550px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    margin-left: 10px;  
+  }
+  .cardImgTitile{
+  width: 100%;
+  position: relative;
+  left: 20px;
+  }
+  .searchResultDiv{
+    position: relative;
+    width: 150px;
+    left: 79px;
+    margin-top: 25px;
+  }
+  .detailsDiv{
+    /* border: 2px solid red; */
+    
+  }
+  .leftSideDiv{
+    /* border: 2px solid rgb(0, 236, 32); */
+    
+  }
+  .player{
+    /* border: 2px solid rgb(6, 171, 247); */
+    width: 100%;
+    height: 150px;
+  }
+  .miniPlayer{
+    position: relative;
+    left: 100px;
+    top: -110px;
+    width: 60px;
+    height: 40px;
+  }
+
+  .loginDiv{
+    width: 80%;
+    height: 270px;
+    margin-top: 140px;
+  }
 }
